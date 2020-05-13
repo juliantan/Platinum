@@ -93,9 +93,9 @@ main(int /* argc */, char** argv)
     ParseCommandLine(argv);
 
     PLT_DeviceHostReference device(
-        new PLT_MediaRenderer(Options.friendly_name?Options.friendly_name:"Platinum Media Renderer",
+        new PLT_MediaRenderer(Options.friendly_name?Options.friendly_name:"MyMediaRenderer",
                               false,
-                              "e6572b54-f3c7-2d91-2fb5-b757f2537e21"));
+                              "aa572b54-f3c7-2d91-2fb5-b757f2537e21"));
     upnp.AddDevice(device);
     bool added = true;
 
